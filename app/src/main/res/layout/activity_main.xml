@@ -32,12 +32,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <ImageView
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/ivCallStart"
+        android:src="@drawable/ic_arrow_up"
+        android:id="@+id/ivArrowUp"
+        android:layout_width="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="50dp" />
+    <ImageView
         android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/red_rounded_button"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_call_end"
+        android:layout_alignParentLeft="true"
         android:id="@+id/ivCallEnd"
         android:layout_width="100dp"
         android:layout_height="100dp" />
+    <ImageView
+        android:layout_marginStart="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/green_rounded_button"
+        android:src="@drawable/ic_call_start"
+        android:layout_toRightOf="@+id/ivCallEnd"
+        android:id="@+id/ivCallStart"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <ImageView
+        android:src="@drawable/ic_message"
+        android:background="@drawable/black_rounded_button"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ivMessage"
+        android:layout_toRightOf="@id/ivCallStart"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
 </RelativeLayout>
