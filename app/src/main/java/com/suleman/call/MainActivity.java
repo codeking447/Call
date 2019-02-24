@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
-//    public class MainActivity extends AppCompatActivity implements Animation.AnimationListener{
+    //    public class MainActivity extends AppCompatActivity implements Animation.AnimationListener{
     ImageView ivCallEnd;
     ImageView ivCallStart;
     ImageView ivMessage;
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity{
         ivCallStart.setAnimation(animationSet);
         ivCallEnd.setAnimation(animationSet);
         ivMessage.setAnimation(animationSet);
+        ivCallStart.setAnimation(animationSet);
+        animationSet.start();
 
         //        animMoveTop = AnimationUtils.loadAnimation(this,R.anim.move_top);
 //        animMoveTop.setAnimationListener(this);
